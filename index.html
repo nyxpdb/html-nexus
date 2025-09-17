@@ -212,8 +212,7 @@
     showNotification('Redirecionando para o Spotify...', 'info');
 
     const authEndpoint = 'https://accounts.spotify.com/authorize';
-    const authUrl = `${authEndpoint}?response_type=token&client_id=${clientId}&scope=${encodeURIComponent(scopes)}&redirect_uri=${encodeURIComponent(redirectUri)}&show_dialog=true`;
-
+const authUrl = `https://accounts.spotify.com/authorize?response_type=token&client_id=${clientId}&scope=${encodeURIComponent(scopes)}&redirect_uri=${encodeURIComponent(redirectUri)}&show_dialog=true`;
     // Redireciona para o modal de autorização do Spotify
     window.location.href = authUrl;
   }
